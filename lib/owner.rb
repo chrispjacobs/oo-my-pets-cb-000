@@ -1,18 +1,18 @@
 class Owner
   attr_accessor :pets
   def initialize
-    @pets = {fishes: [], cats: [], dogs: []}
+    @pets = {cats: [], dogs: [], fish: []}
   end
   def buy_cat(name)
-    new_cat_variable = Cat.new(name)
-    @pets[:cats] << new_cat_variable
+    cat = Cat.new(name)
+    @pets[cats] << cat
   end
-  def new_dog(name)
-    new_dog_variable = Dog.new(name)
-    @pets[:dogs] << new_dog_variable
+  def buy_dog(name)
+    dog = Dog.new(name)
+    @pets[dogs] << dog
   end
-  def new_fish(name)
-    new_fish_variable = Fish.new(name)
-    @pets[:fish] << new_fish_variable
+  def buy_fish(name)
+    fish = Fish.new(name)
+    @pets[fish] << fish
   end
 end
