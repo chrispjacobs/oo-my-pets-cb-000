@@ -24,4 +24,7 @@ class Owner
   def pets
     @pets
   end
+  def self.reset_all
+    @@all = []
+  end
 end
