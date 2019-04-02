@@ -35,7 +35,7 @@ class Owner
     end
   end
   def feed_fish
-    @pets[:fish].each do |fish|
+    @pets[:fishes].each do |fish|
       fish.mood = "happy"
     end
   end
@@ -52,7 +52,7 @@ class Owner
     @@all.count
   end
   def sell_pets
-    @pets[:fish].each do |fish|
+    @pets[:fishes].each do |fish|
       fish.mood = "nervous"
     end
     @pets[:cats].each do |cat|
@@ -61,11 +61,11 @@ class Owner
     @pets[:dogs].each do |dog|
       dog.mood = "nervous"
     end
-    @pets[:fish] = []
+    @pets[:fishes] = []
     @pets[:cats] = []
     @pets[:dogs] = []
   end
   def list_pets
-    puts "I have #{@pets[:fish].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
+    puts "I have #{@pets[:fishes].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
   end
 end
