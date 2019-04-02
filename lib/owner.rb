@@ -51,4 +51,17 @@ class Owner
   def self.count
     @@all.count
   end
+  def sell_pets
+    @pets[:fish].each do |fish|
+      fish.mood = "nervous"
+    end
+    @pets[:cats].each do |cat|
+      cat.mood = "nervous"
+    end
+    @pets[:dogs].each do |dog|
+      dog.mood = "nervous"
+    end
+    @pets[:fish] = []
+    @pets[:cats] = []
+    @pets[:dogs] = []
 end
