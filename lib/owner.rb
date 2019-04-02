@@ -34,6 +34,11 @@ class Owner
       cat.mood = "happy"
     end
   end
+  def feed_fish
+    @pets[:fish].each do |fish|
+      fish.mood = "happy"
+    end
+  end
   def self.reset_all
     @@all = []
   end
