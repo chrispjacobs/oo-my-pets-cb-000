@@ -64,4 +64,5 @@ class Owner
     @pets[:fish] = []
     @pets[:cats] = []
     @pets[:dogs] = []
+  end
 end
